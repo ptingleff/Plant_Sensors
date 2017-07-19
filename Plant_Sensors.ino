@@ -14,7 +14,7 @@ Adafruit_BME280 bme: //I2C
 //Adafruit_BME280 bme(BME_CS); //hardware SPI
 //Adafruit_BME280 bme(BME_CS,BME_MOSI,BME_MISO,BME_SCK); //software SPI
 
-TSL 2561 tsl(TSL2561_ADDR_FLOAT);
+TSL_2561 tsl(TSL2561_ADDR_FLOAT);
 
 void setup(void) {
   // put your setup code here, to run once:
