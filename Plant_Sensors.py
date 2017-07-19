@@ -54,7 +54,7 @@ if __name__ == '__main__':
     dataAPI = http.server.HTTPServer(address,WebHandler)
     try:
         dataAPI.serve_forever()
-    except KeyboardInterrupt
+    except KeyboardInterrupt:
         print("Closing Socket.")
         dataAPI.socket.close()
         exit()
