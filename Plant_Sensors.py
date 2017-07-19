@@ -7,7 +7,7 @@ import threading
 
 ser = serial.Serial("/dev/ttyACM0",9600)
 ser.flush()
-address = ('localhost',8000)
+address = ('',8000)
 
 def makeLine():
     line=[]
