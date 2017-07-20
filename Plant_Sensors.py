@@ -48,7 +48,6 @@ class WebHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(bytes("<body><p>",'utf-8'))
             self.wfile.write(bytes(makeLine(),'utf-8'))
             self.wfile.write(bytes("</p></body></html>",'utf-8'))
-            self.wfile.close()
 
 if __name__ == '__main__':
     dataAPI = http.server.HTTPServer(address,WebHandler)
